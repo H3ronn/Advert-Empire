@@ -2,7 +2,7 @@ import type { Item } from '../types/item';
 
 export const items: Item[] = [
   {
-    id: 1,
+    id: '1',
     userId: 111,
     added: '17.10.2022',
     name: 'Laptop lenovo',
@@ -14,7 +14,7 @@ export const items: Item[] = [
     categories: ['laptops'],
   },
   {
-    id: 2,
+    id: '2',
     userId: 222,
     added: '17.10.2022',
     name: 'Alusy 17',
@@ -25,7 +25,7 @@ export const items: Item[] = [
     categories: ['motorization', 'wheels'],
   },
   {
-    id: 3,
+    id: '3',
     userId: 333,
     added: '17.10.2022',
     name: 'Monitor lg',
@@ -36,7 +36,7 @@ export const items: Item[] = [
     categories: ['computers', 'monitors'],
   },
   {
-    id: 4,
+    id: '4',
     userId: 444,
     added: '17.10.2022',
     name: 'Sikor',
@@ -46,7 +46,7 @@ export const items: Item[] = [
     categories: ['watches'],
   },
   {
-    id: 1,
+    id: '5',
     userId: 111,
     added: '17.10.2022',
     name: 'Laptop lenovo',
@@ -58,7 +58,7 @@ export const items: Item[] = [
     categories: ['laptops'],
   },
   {
-    id: 2,
+    id: '6',
     userId: 222,
     added: '17.10.2022',
     name: 'Alusy 17',
@@ -69,7 +69,7 @@ export const items: Item[] = [
     categories: ['motorization', 'wheels'],
   },
   {
-    id: 3,
+    id: '7',
     userId: 333,
     added: '17.10.2022',
     name: 'Monitor lg',
@@ -80,7 +80,7 @@ export const items: Item[] = [
     categories: ['computers', 'monitors'],
   },
   {
-    id: 4,
+    id: '8',
     userId: 444,
     added: '17.10.2022',
     name: 'Sikor',
@@ -90,7 +90,7 @@ export const items: Item[] = [
     categories: ['watches'],
   },
   {
-    id: 1,
+    id: '9',
     userId: 111,
     added: '17.10.2022',
     name: 'Laptop lenovo',
@@ -102,7 +102,7 @@ export const items: Item[] = [
     categories: ['laptops'],
   },
   {
-    id: 2,
+    id: '10',
     userId: 222,
     added: '17.10.2022',
     name: 'Alusy 17',
@@ -113,7 +113,7 @@ export const items: Item[] = [
     categories: ['motorization', 'wheels'],
   },
   {
-    id: 3,
+    id: '11',
     userId: 333,
     added: '17.10.2022',
     name: 'Monitor lg',
@@ -124,7 +124,7 @@ export const items: Item[] = [
     categories: ['computers', 'monitors'],
   },
   {
-    id: 4,
+    id: '12',
     userId: 444,
     added: '17.10.2022',
     name: 'Sikor',
@@ -134,7 +134,7 @@ export const items: Item[] = [
     categories: ['watches'],
   },
   {
-    id: 1,
+    id: '13',
     userId: 111,
     added: '17.10.2022',
     name: 'Laptop lenovo',
@@ -146,7 +146,7 @@ export const items: Item[] = [
     categories: ['laptops'],
   },
   {
-    id: 2,
+    id: '14',
     userId: 222,
     added: '17.10.2022',
     name: 'Alusy 17',
@@ -157,7 +157,7 @@ export const items: Item[] = [
     categories: ['motorization', 'wheels'],
   },
   {
-    id: 3,
+    id: '15',
     userId: 333,
     added: '17.10.2022',
     name: 'Monitor lg',
@@ -168,7 +168,7 @@ export const items: Item[] = [
     categories: ['computers', 'monitors'],
   },
   {
-    id: 4,
+    id: '16',
     userId: 444,
     added: '17.10.2022',
     name: 'Sikor',

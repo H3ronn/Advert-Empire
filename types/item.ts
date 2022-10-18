@@ -8,7 +8,7 @@ export type Category =
   | 'watches';
 
 export type Item = {
-  id: number;
+  id: string;
   userId: number;
   added: string;
   name: string;
