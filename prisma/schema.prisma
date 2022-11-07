@@ -1,0 +1,83 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model User {
+  id        String     @id @default(cuid())
+  name      String
+  email     String
+  phone     Int?
+  createdAt DateTime @default(now())
+  role      Role @default(USER)
+  adverts   Advert[]
+  comments  Comment[]
+  messages  Message[]
+}
+  
+model Advert {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title       String
+  content     String
+  images      String[]
+  location    String
+  // reports   String
+  expiresAt   DateTime
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime?
+  price       Int?
+  categories  Category[]
+  messages    Message[]
+  // publicQuestions[]
+}
+
+
+model Category {
+  id       String    @id @default(cuid())
+  advertId String
+  advert   Advert    @relation(fields: [advertId], references: [id], onDelete: Cascade)
+  name     String
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  advertId  String
+  advert    Advert   @relation(fields: [advertId], references: [id], onDelete: Cascade)
+  senderId  String
+  user      User     @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  recicerId Int
+  content   String
+  date      DateTime @default(now())
+  displayed Boolean  @default(false)
+}
+
+enum CommentType {
+  USER
+  ADVERT
+}
+
+model Comment {
+  id       String     @id @default(cuid())
+  userId   String
+  user     User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type     CommentType
+  content  String
+  accepted Boolean
+  date      DateTime @default(now())
+  rating   Int
+}
