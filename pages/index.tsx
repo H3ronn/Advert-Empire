@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Items from '../components/items/Items';
+import Adverts from '../components/adverts/Adverts';
 import Layout from '../components/layout/Layout';
 import type Prisma from '@prisma/client';
 
@@ -15,9 +15,9 @@ const Home: NextPage<IndexProps> = ({ adverts }) => {
     <Layout>
       <Head>
         <title>Advert Empire</title>
-        <meta name="description" content="Items advert" />
+        <meta name="description" content="Adverts" />
       </Head>
-      <Items items={adverts} />
+      <Adverts adverts={adverts} />
     </Layout>
   );
 };

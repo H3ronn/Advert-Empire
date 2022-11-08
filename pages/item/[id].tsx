@@ -2,7 +2,7 @@ import type { GetStaticProps } from 'next';
 import { getItemById, getItemsPaths } from '../../lib/items';
 import { Item } from '../../types/item';
 import styles from '../../components/items/item/item.module.scss';
-import NoImage from '../../components/items/noImage/NoImage';
+import NoImage from '../../components/adverts/noImage/NoImage';
 
 type ItemProps = {
   itemData: Item;
