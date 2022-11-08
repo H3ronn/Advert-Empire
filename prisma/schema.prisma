@@ -37,11 +37,11 @@ model Advert {
   images      String[]
   location    String
   // reports   String
-  expiresAt   DateTime
+  expiresAt   DateTime?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime?
   price       Int?
-  categories  Category[]
+  // categories  Category[]
   messages    Message[]
   // publicQuestions[]
 }
@@ -49,8 +49,8 @@ model Advert {
 
 model Category {
   id       String    @id @default(cuid())
-  advertId String
-  advert   Advert    @relation(fields: [advertId], references: [id], onDelete: Cascade)
+  // advertId String
+  // advert   Advert    @relation(fields: [advertId], references: [id], onDelete: Cascade)
   name     String
 }
 

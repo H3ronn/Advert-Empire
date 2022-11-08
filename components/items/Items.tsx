@@ -1,11 +1,15 @@
 import Item from './item/Item';
-import { items as itemsData } from '../../data/items';
 import styles from './items.module.scss';
+import type Prisma from '@prisma/client';
 
-const Items = () => {
+type IndexProps = {
+  items: Prisma.Advert[];
+};
+
+const Items = ({ items }: IndexProps) => {
   return (
     <ul className={styles.wrapper}>
-      {itemsData.map((item) => (
+      {items.map((item) => (
         <Item key={item.id} itemData={item} />
       ))}
     </ul>
