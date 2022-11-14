@@ -10,7 +10,7 @@ type AdvertProps = {
 const Advert = ({ advertData: { id, images, title, location, price, createdAt } }: AdvertProps) => {
   return (
     <li className={styles.wrapper}>
-      <Link href={`/item/${id}`}>
+      <Link href={`/advert/${id}`}>
         <a>
           {images ? <img className={styles.image} src={images[0]} alt="" /> : <NoImage />}
           <div>
