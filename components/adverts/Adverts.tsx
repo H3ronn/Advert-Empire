@@ -12,6 +12,21 @@ const Adverts = ({ adverts }: IndexProps) => {
       {adverts.map((advert) => (
         <Advert key={advert.id} advertData={advert} />
       ))}
+      {adverts.map((advert) => (
+        <Advert key={advert.id} advertData={advert} />
+      ))}
+      {adverts.map((advert) => (
+        <Advert key={advert.id} advertData={advert} />
+      ))}
+      {adverts.map((advert) => (
+        <Advert key={advert.id} advertData={advert} />
+      ))}
+      {adverts.map((advert) => (
+        <Advert key={advert.id} advertData={advert} />
+      ))}
+      {adverts.map((advert) => (
+        <Advert key={advert.id} advertData={advert} />
+      ))}
     </ul>
   );
 };
