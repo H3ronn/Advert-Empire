@@ -5,6 +5,7 @@ import Adverts from '../components/adverts/Adverts';
 import Layout from '../components/layout/Layout';
 import type Prisma from '@prisma/client';
 import Header from '../components/header/Header';
+import Categories from '../components/categories/Categories';
 
 type IndexProps = {
   adverts: Prisma.Advert[];
@@ -18,6 +19,7 @@ const Home: NextPage<IndexProps> = ({ adverts }) => {
         <meta name="description" content="Adverts" />
       </Head>
       <Header />
+      <Categories />
       <Adverts adverts={adverts} />
     </Layout>
   );
