@@ -1,14 +1,16 @@
 import Link from 'next/link';
 import type Prisma from '@prisma/client';
 import NoImage from '../noImage/NoImage';
-import styles from './advert.module.scss';
-import ObserveIcon from '../../../public/icons/observe.svg';
+import styles from './advertItem.module.scss';
+import ObserveIcon from '../../../../public/icons/observe.svg';
 
 type AdvertProps = {
   advertData: Prisma.Advert;
 };
 
-const Advert = ({ advertData: { id, images, title, location, price, createdAt } }: AdvertProps) => {
+const AdvertItem = ({
+  advertData: { id, images, title, location, price, createdAt },
+}: AdvertProps) => {
   return (
     <li className={styles.wrapper}>
       <Link href={`/advert/${id}`}>
@@ -34,4 +36,4 @@ const Advert = ({ advertData: { id, images, title, location, price, createdAt } 
   );
 };
 
-export default Advert;
+export default AdvertItem;

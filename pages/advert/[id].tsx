@@ -1,8 +1,8 @@
 import type { GetStaticProps } from 'next';
 import { getAdvertById, getAdvertsPaths } from '../../lib/adverts';
-import styles from '../../components/adverts/advert/advert.module.scss';
-import NoImage from '../../components/adverts/noImage/NoImage';
+import styles from '../../components/adverts/advertList/advertList.module.scss';
 import type Prisma from '@prisma/client';
+import NoImage from '../../components/adverts/advertList/noImage/NoImage';
 
 type AdvertPageProps = {
   advertData: Prisma.Advert;
