@@ -1,0 +1,65 @@
+.wrapper {
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.backIcon {
+  top: 50px;
+  left: calc(10% + 30px);
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 90%;
+  border-bottom-left-radius: 50px;
+  margin-right: -20px;
+}
+
+.informations {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.locality,
+.added {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  line-height: 1.3rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.price {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.content {
+  font-size: 1.4rem;
+  color: var(--lightGray);
+  margin: 0;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.messageButton {
+  font-size: 1.6rem;
+  color: white;
+  background-color: var(--darkBlue);
+  flex: 1;
+  border-radius: 8px;
+}

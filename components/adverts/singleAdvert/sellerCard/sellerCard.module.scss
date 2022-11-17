@@ -1,0 +1,42 @@
+.wrapper {
+  margin: 10px 0;
+  background-color: white;
+  box-shadow: 0 4px 12px #dee2e6;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+}
+
+.sellerName {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.created {
+  color: var(--lightGray);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.link {
+  font-size: 1.4rem;
+  display: block;
+  font-weight: 500;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.contact {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 0;
+  display: flex;
+  gap: 8px;
+}
+
+.icons {
+  width: 20px;
+}
